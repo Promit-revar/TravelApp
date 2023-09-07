@@ -1,0 +1,209 @@
+.trip_details {
+  width: 100%;
+  &__content {
+    .section_title {
+      font-size: 2.6rem;
+    }
+  }
+}
+.list_view_item {
+  width: 100%;
+}
+.client_details {
+  &_personal {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 100%;
+  }
+  &_left_section {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: flex-start;
+  }
+  &_left_section img {
+    border-radius: 50%;
+    padding: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  &_left_section h1 {
+    color: #000;
+    font-family: Tauri;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+  &_phone {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    gap: 3px;
+  }
+  &_email {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    gap: 5px;
+    align-items: center;
+  }
+  &_Entry_time {
+    color: #000;
+    text-align: center;
+    font-family: Tauri;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &_tabs {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    gap: 5%;
+    flex-direction: row;
+    color: #000;
+    justify-content: flex-start;
+    font-family: Tauri;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &_tabs_items {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    gap: 5%;
+    width: 10%;
+    padding: 10px;
+    justify-content: center;
+  }
+  &_tabs_ticket {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    width: 20%;
+    padding: 10px;
+    justify-content: center;
+  }
+  &_tabs_ticket:hover {
+    background-color: #B4A9F4;
+  }
+  &_tabs_items:hover {
+    background-color: #B4A9F4;
+  }
+  &_location {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    gap: 3px;
+    color: #484848;
+    text-align: center;
+    font-family: Tauri;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+  }
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  justify-content: space-between;
+}
+// Card
+.card_container {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .trip_details_card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 37px;
+    gap: 0px !important;
+    flex-wrap: wrap;
+    padding: 1.3rem;
+    overflow-wrap: break-word;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    .card_inner {
+      &_image_wrapper {
+        overflow: hidden;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-left: 2px;
+        .card_inner_image {
+          transform: scale(1.2);
+          height: 292px;
+          position: relative;
+          z-index: 1;
+        }
+      }
+      &_name {
+        display: flex;
+        font-size: 1rem;
+        margin: 0.4rem 0;
+        display: flex;
+        align-items: center;
+        .icon_wrapper {
+          width: 28px;
+          height: 28px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 15px;
+        }
+      }
+      &_details {
+        display: flex;
+        background-color: #fff;
+        padding: 10px;
+        margin-top: -20px;
+        position: relative;
+        z-index: 2;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        flex-direction: column;
+      }
+      &_notes {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .flexAlign {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .card_container {
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .card_container {
+    justify-content: center;
+    .trip_details_card {
+      margin-right: 0;
+    }
+  }
+}

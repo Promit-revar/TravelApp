@@ -1,0 +1,61 @@
+.sidebar {
+  //   border: 1px solid #9a9a9a;
+  width: 100%;
+  padding-top: 20px;
+  height: calc(100% - 74px);
+
+  &_content {
+    width: 100%;
+    position: relative;
+    height: 100%;
+
+    &_menuList {
+      list-style: none;
+      width: 100%;
+
+      .listItem {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 25px;
+        background-color: transparent;
+        border-radius: 20px;
+        // border: 1px solid #e5e7eb;
+        display: flex;
+        align-items: center;
+        color: #000;
+        // font-family: Tauri;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        span {
+          padding-left: 25px;
+        }
+
+        &:hover {
+          background-color: #B4A9F4;
+        }
+      }
+    }
+
+    .logout_wrapper {
+      padding: 15px;
+      position: absolute;
+      bottom: 5%;
+
+      .logout_wrapper_text {
+        display: flex;
+        align-items: center;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        span {
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+}

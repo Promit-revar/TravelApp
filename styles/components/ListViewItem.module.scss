@@ -1,0 +1,53 @@
+.list_view_item {
+    &_phone {
+        display: flex;
+        flex-direction: row;
+        width: 20%
+    }
+
+    &_email {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+    }
+
+    &_name {
+        width: 20%;
+        flex-wrap: wrap;
+    }
+
+    &_image {
+        border-radius: 25px;
+        width: 200px;
+        height: 100px;
+    }
+
+    &_time {
+        width: 10%;
+    }
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 8%;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 10px;
+
+}
+
+.icon_wrapper {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.email_field,
+.name_field,
+.no_field,
+.image_field {
+    width: 20%;
+}

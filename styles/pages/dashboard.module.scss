@@ -1,0 +1,188 @@
+
+.dashboard_layout {
+ 
+  min-height: 80vh;
+  padding-top: 73px;
+  background-color: #a7a7a7;
+  background-color: #faf9fd;
+}
+.layout_content {
+  max-height: 92vh !important;
+  overflow-y: scroll;
+}
+.layout_sidebar {
+  max-height: 92vh !important;
+}
+.layout_profile {
+  max-height: 92vh !important;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: flex-start;
+  font-family: Tauri;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.filters{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  &_headings{
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    // width: 30%;
+  }
+  width: 100%;
+}
+/* styles for DashboardLayout component */
+.h-screen.flex-col {
+  /* Add border */
+  border: 1px solid #ccc;
+  /* Remove scrollbar */
+  overflow: hidden;
+}
+
+
+
+
+.filters_headings button.active {
+ 
+  color: #fff;
+}
+
+.profile_image{
+  background:  lightgray 50% /cover no-repeat;
+  margin-bottom: 50px;
+}
+
+.username{
+  color: #000;
+  text-align: center;
+  font-family: Tauri;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.trip_details {
+  width: 100%;
+
+  &__content {
+    .section_title {
+      font-size: 2.6rem;
+      line-height: 90%;
+
+      span {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+
+.filters_headings {
+  button {
+    position: relative;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: none;
+    
+    color: #333333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+
+    &:hover {
+     
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -3px; /* Adjust the distance of the underline from the button text */
+        left: 0;
+        width: 100%;
+        height: 2px; /* Adjust the thickness of the underline */
+        background-color: #007bff; /* Adjust the underline color */
+
+        &:hover {
+          /* Add hover effect for buttons */
+          background-color:blue; /* Adjust the background color on hover */
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  
+
+  
+  .active {
+    background-color: #0099ff;
+    color: blue;
+  }
+}
+
+
+.notification -icon{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%; /* This makes the div appear as a circle */
+  background-color: #f0f0f0; /* Set the desired background color here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+// Card
+
+.card_container {
+  padding-top: 1.3rem;
+
+
+  .trip_details_card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    overflow-wrap: break-word;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    width: 305px;
+
+    .card_inner {
+      &_name {
+        font-size: 1.3rem;
+        margin: 0.4rem 0;
+
+        .label {
+          color: #000000aa;
+        }
+      }
+
+      .one_way {
+        // background-color: ;
+
+        .travel_type {
+          font-size: 1.1rem;
+          color: #fff;
+          padding: 5px 12px;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
+
+// .right_calender {
+//   height: 120vh !important;
+// }
